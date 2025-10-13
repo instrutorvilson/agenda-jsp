@@ -12,10 +12,16 @@
 </head>
 <body>
    <div class=container>
-      <h1>Agenda de contatos</h1>
-	   <hr />
-	   <a href="cadastro.jsp">Cadastrar</a>
-	   <a href="consulta.jsp">Consultar</a>
+     <header>
+         <h1>Agenda de contatos</h1>
+         <%@ include file="menu.jsp" %>
+     </header>
+      <main>
+          Agenda de contatos
+      </main>
+	  <footer>
+          <%@ include file="footer.jsp" %>
+        </footer>
    </div>
 </body>
 </html>

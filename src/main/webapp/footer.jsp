@@ -1,0 +1,1 @@
+<p class="text-center mt-5 bgcolor='black'">Direitos autorais reservados por ©Copyright </p>

@@ -13,7 +13,11 @@
 </head>
 <body>
 	<div class="container">
-	   <table class="table table-striped ">
+	   <header>
+	       <%@ include file="menu.jsp" %>
+	   </header>
+	   <main>
+	      <table class="table table-striped ">
 	     <thead>
 		     <tr>
 		        <th>Nome</th>
@@ -39,12 +43,11 @@
 	           }
 	         %>
 	      </tbody>
-	      <tfoot>
-	        
-	      </tfoot>
-	   </table>
-       <hr />
-         <a href="index.jsp">Home</a>
+		   </table>
+	   </main>
+       <footer>
+          <%@ include file="footer.jsp" %>
+       </footer>
     </div>
 </body>
 </html>

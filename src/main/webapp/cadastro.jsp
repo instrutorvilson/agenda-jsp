@@ -12,18 +12,25 @@
 </head>
 <body>
     <div class="container">
-       <h2 class="text-center m-4">Novo contato</h2>
-       <form action="ContatoServlet"  method="post">
-           <label>Informe nome</label>
-           <input class="form-control" type="text" placeholder="EX: ana" name="nome" required="required"/>
-           
-           <label>Informe email</label>
-           <input class="form-control" type="email" placeholder="EX: ana@gmail.com" name="email" required="required" />
-           
-           <button class="btn btn-primary mt-3">Salvar</button>
-       </form>
-        <hr />
-	    <a href="index.jsp">Home</a>
+	    <header>
+	         <h1>Agenda de contatos</h1>
+	         <%@ include file="menu.jsp" %>
+	     </header>
+         <main>
+            <h2 class="text-center m-4">Novo contato</h2>
+	       <form action="ContatoServlet"  method="post">
+	           <label>Informe nome</label>
+	           <input class="form-control" type="text" placeholder="EX: ana" name="nome" required="required"/>
+	           
+	           <label>Informe email</label>
+	           <input class="form-control" type="email" placeholder="EX: ana@gmail.com" name="email" required="required" />
+	           
+	           <button class="btn btn-primary mt-3">Salvar</button>
+	       </form>
+         </main>
+        <footer>
+          <%@ include file="footer.jsp" %>
+        </footer>
     </div>
 </body>
 </html>
