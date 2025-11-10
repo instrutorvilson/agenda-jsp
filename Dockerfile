@@ -18,6 +18,10 @@ RUN find src/main/java -name "*.java" > sources.txt && \
 # Etapa 2: rodar no Tomcat
 FROM tomcat:10.1.26-jdk17
 
+COPY ./src /usr/local/tomcat/webapps/AgendaServlet/src
+COPY ./webapp /usr/local/tomcat/webapps/AgendaServlet/
+COPY ./webapp/WEB-INF/lib /usr/local/tomcat/lib/
+
 # Remove o ROOT padrão do Tomcat
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 
