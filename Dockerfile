@@ -12,7 +12,8 @@ RUN mkdir -p src/main/webapp/WEB-INF/classes
 
 # Compila os arquivos Java (ajuste o pacote se necessário)
 RUN find src/main/java -name "*.java" > sources.txt && \
-    javac -d src/main/webapp/WEB-INF/classes @sources.txt
+	javac -cp "src/main/webapp/WEB-INF/lib/*" -d src/main/webapp/WEB-INF/classes @sources.txt
+
 
 # Etapa 2: rodar no Tomcat
 FROM tomcat:10.1.26-jdk17
