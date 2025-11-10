@@ -8,8 +8,7 @@ public class ConectaDB {
 	public static Connection getConexao() {
 		String user = System.getenv("DB_USER"); //"root";
 		String password = System.getenv("DB_PASSWORD");//"root";
-		String url = System.getenv("DATABASE_URL");  //"jdbc:mysql://localhost:3306/bd_agenda";
-		System.out.println(System.getenv("DB_USER"));
+		String url = System.getenv("DATABASE_URL");  //"jdbc:mysql://localhost:3306/bd_agenda";		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			return DriverManager.getConnection(url, user, password);
