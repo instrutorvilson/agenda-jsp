@@ -25,6 +25,9 @@
 	           <label>Informe email</label>
 	           <input class="form-control" type="email" placeholder="EX: ana@gmail.com" name="email" required="required" />
 	           
+	           <label>Informe senha</label> 
+		       <input class="form-control" type="password" name="senha" />
+	           
 	           <button class="btn btn-primary mt-3">Salvar</button>
 	       </form>
          </main>
