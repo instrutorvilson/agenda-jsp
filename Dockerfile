@@ -22,6 +22,7 @@ FROM tomcat:10.1.26-jdk17
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 
 # Copia a aplicação compilada da etapa anterior
+COPY src/main/webapp /usr/local/tomcat/webapps/ROOT
 COPY --from=build /app/src/main/webapp /usr/local/tomcat/webapps/ROOT
 
 EXPOSE 8080
